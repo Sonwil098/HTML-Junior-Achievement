@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+body {
+  margin: 0;
+  background-color: black;
+  height: 1900px;
+  padding: none;
+}
+
+header {
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 2;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-shadow: 7px 7px 7px rgb(255, 255, 255, 0.5);
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: seashell;
+}
+
+header nav ul a:hover {
+  color: rgb(22, 184, 49);
+}
+
+header nav ul li {
+  background-color: rgba(1, 1, 1, 0.7);
+  width: auto;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+header nav ul li:hover {
+  background-color: rgb(43, 35, 35);
+}
+
+header ul li {
+  margin: 15px;
+}
+
+.encabezado {
+  height: 80px;
+  width: 175px;
+}
+
+#razerLogo {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+#razerLogo.oculto {
+  opacity: 0;
+}
+
+h1 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  text-shadow: 7px 7px 7px black;
+  padding: 100px 0px 100px 0px;
+}
+.videofondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.videofondo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Perifericos {
+  padding: none;
+  margin-top: 30%;
+  width: auto;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  block-size: 100%;
+}
+
+.Perifericos img:hover {
+  transform: scale(1.1);
+}
+
+.Perifericos img {
+  margin-top: 100px;
+  height: 35%;
+  width: 24%;
+  transition: 1s;
+  margin: 3px;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+.nombres {
+  position: relative;
+  right: 30px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 5px 5px 5px rgb(255, 255, 255, 0.5);
+}
+
+#mouse {
+  position: relative;
+  right: 20px;
+}
+
+#audio {
+  position: relative;
+  right: 20px;
+}
+
+.somos {
+  padding: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.somos img {
+  position: relative;
+  border-radius: 2%;
+  padding-bottom: 50px;
+  width: 300px;
+  height: 270px;
+  right: 50px;
+}
+
+.quienes {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: aliceblue;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 60px;
+  text-shadow: 7px 7px 7px rgb(255, 255, 255, 0.5);
+}
+
+.quienes h2 {
+  position: relative;
+  right: 175px;
+  top: 50px;
+}
+
+.somos p {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: aliceblue;
+  text-align: center;
+  margin: 10px;
+  left: 20px;
+  bottom: 30px;
+}
+
+.somos img {
+  margin-left: 100px;
+}
+
+.ubicacion {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  height: 500px;
+}
+
+.ubicacion h2 {
+  text-shadow: 7px 7px 7px rgb(255, 255, 255, 0.5);
+}
+
+.ubicacion hr {
+  position: relative;
+  bottom: 80px;
+}
+
+#donde {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contenedorubicaciones {
+  width: 98vw;
+  align-items: center;
+  justify-content: space-around;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.caseros {
+  display: block;
+  width: 300px;
+  height: 415px;
+  padding-left: 10px;
+}
+
+.caseros p {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  top: 200px;
+  right: 9px;
+  text-align: center;
+}
+
+.caseros img {
+  position: absolute;
+  width: 270px;
+}
+
+.rafael {
+  display: block;
+  width: 300px;
+  height: 415px;
+  padding-left: 10px;
+}
+
+.rafael p {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  top: 49px;
+  right: 9px;
+  text-align: center;
+}
+
+.rafael img {
+  width: 270px;
+  height: 153px;
+}
+
+.orono {
+  display: block;
+  width: 300px;
+  height: 415px;
+  padding-left: 10px;
+}
+
+.orono p {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  top: 49px;
+  right: 5px;
+  text-align: center;
+}
+
+.orono img {
+  width: 270px;
+  height: 153px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 100%;
+  background-image: url(./Imagenes/Newsletter1.jpg);
+  background-size: cover;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+.formulario {
+  position: relative;
+  top: 190px;
+}
+
+.formulario input {
+  position: relative;
+  top: 2px;
+  color: aliceblue;
+  height: 40px;
+  width: 350px;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.formulario input:hover {
+  box-shadow: -7px -7px 10px rgba(230, 218, 218, 0.2);
+}
+
+.boton {
+  height: 40px;
+  width: 45px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.bi-send-arrow-up-fill {
+  height: 25px;
+  width: 25px;
+  color: rgb(18, 156, 52);
+}
+
+.newsletter1 {
+  text-align: center;
+  margin-top: 20px;
+  height: 90%;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.newsletter1 h2 {
+  color: aliceblue;
+  position: relative;
+  top: 75px;
+}
+
+.newsletter1 p {
+  color: aliceblue;
+  font-size: 23px;
+  text-align: center;
+  position: relative;
+  width: 500px;
+  top: 100px;
+}
+
+.final {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.final img {
+  height: 130px;
+}
+
+.footer {
+  position: relative;
+  top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logotipo {
+  color: aliceblue;
+  height: 30px;
+  width: 110px;
+  position: relative;
+  top: 65px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.final hr {
+  position: relative;
+  top: 35px;
+}
+
+.imagenesdefooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.imgf {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid white;
+  top: 80px;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.imgf:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.imgf img {
+  filter: blur(2px);
+  height: 100%;
+}
+
+#inicio2 {
+  background-color: black;
+  height: 101%;
+}
+
+.imgp {
+  z-index: 2;
+  position: absolute;
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 29px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
