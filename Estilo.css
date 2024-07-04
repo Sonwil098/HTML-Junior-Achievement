@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-body {
+.body-principal {
   margin: 0;
   background-color: black;
   height: 1900px;
@@ -122,8 +123,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Anton SC", sans-serif;
   text-shadow: 5px 5px 5px rgb(255, 255, 255, 0.5);
 }
 
@@ -377,6 +377,7 @@ h1 {
   justify-content: center;
 }
 
+
 .final hr {
   position: relative;
   top: 35px;
@@ -393,7 +394,7 @@ h1 {
   position: relative;
   overflow: hidden;
   border: 1px solid white;
-  top: 80px;
+  top: 65px;
   height: 200px;
   width: 200px;
   border-radius: 15px;
@@ -419,12 +420,76 @@ h1 {
   z-index: 2;
   position: absolute;
   color: aliceblue;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 29px;
+  font-family: "Anton SC", sans-serif;
+  font-size: 35px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#help{
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+#help.oculto{
+  opacity: 0.1;
+}
+
+
+
+
+.hr{
+  color: green;
+}
+
+#hr{
+  position: relative;
+  top: 90px;
+}
+
+.derechos{
+  color: rgb(21, 255, 0);
+  position: relative;
+  top: 80px;
+
+}
+
+.parrafo{
+  color: aliceblue;
+}
+
+.contenedor{
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+.titulo1{
+  position: relative;
+  top: 90px;
+}
+
+.contenedor h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.video2{
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video2{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 
